@@ -1,0 +1,10 @@
+<% if @cipher %>
+  <h1>Your encrypted word is <%= @cipher %>!</h1>
+<% end %>
+
+
+<form action="/cipher">
+  <input type="text" name="word">
+  <input type="submit">
+</form>
+
