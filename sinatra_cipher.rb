@@ -2,10 +2,10 @@ require "sinatra"
 require "erb"
 require "caesar_cipher"
 
-get "/:word" do
-    @cipher = params["word"] 
+get "/" do
+    @cipher = Cipher.new(params["word"])
     
-    erb :layout
+    erb :cipher
 end
 
 post "/" do
