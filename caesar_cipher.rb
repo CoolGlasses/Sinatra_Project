@@ -1,6 +1,13 @@
 require 'sinatra'
 require 'erb'
 
+class Cipher
+
+attr_accessor :cipher
+
+def initialize(message)
+  @cipher = caesar_cipher(message)
+end
 
 def caesar_cipher(message, shift)
     alphabet = "abcdefghijklmnopqrstuvwxyz"
@@ -43,7 +50,6 @@ def caesar_cipher(message, shift)
         final_message += final_word + " "
       end
     end
-
     return final_message
-
   end
+end
