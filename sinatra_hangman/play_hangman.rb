@@ -1,4 +1,7 @@
 require_relative "hangman"
+require "sinatra"
+require "byebug"
+require "sinatra/reloader"
 
 hangman = Hangman.new
 

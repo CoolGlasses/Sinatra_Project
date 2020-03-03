@@ -1,5 +1,7 @@
 require "byebug"
 require "json"
+require "sinatra"
+
 
 class Hangman
   DICTIONARY = []
