@@ -3,6 +3,9 @@ require "sinatra"
 require "byebug"
 require "sinatra/reloader"
 
+enable :sessions 
+
+
 hangman = Hangman.new
 
 

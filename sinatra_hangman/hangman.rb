@@ -1,6 +1,9 @@
 require "byebug"
 require "json"
 require "sinatra"
+require "sinatra/reloader"
+
+enable :sessions
 
 
 class Hangman
