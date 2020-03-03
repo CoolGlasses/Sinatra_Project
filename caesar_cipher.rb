@@ -5,8 +5,8 @@ class Cipher
 
 attr_accessor :cipher
 
-def initialize(message)
-  @cipher = caesar_cipher(message)
+def initialize(message, shift)
+  @cipher = caesar_cipher(message, shift.to_i)
 end
 
 def caesar_cipher(message, shift)
